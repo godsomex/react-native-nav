@@ -5,7 +5,12 @@ function Login(props) {
   return (
     <View style={styles.container}>
       <Text>Login</Text>
-      <Button onPress={() => props.navigation.navigate("Home")} title="Home" />
+      <Button
+        onPress={() => {
+          props.setIsAuth(true);
+        }}
+        title="Home"
+      />
     </View>
   );
 }
